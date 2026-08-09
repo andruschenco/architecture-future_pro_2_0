@@ -1,0 +1,110 @@
+<mxfile host="Electron">
+  <diagram name="Context Map (DDD)" id="Z8VEx_EH6gZZLR1nWjro">
+    <mxGraphModel dx="1414" dy="859" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="cm0" />
+        <mxCell id="cm1" parent="cm0" />
+        <mxCell id="cm-title" parent="cm1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" value="Context Map — «Будущее 2.0» (Domain-Driven Design)" vertex="1">
+          <mxGeometry height="40" width="700" x="250" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-security" parent="cm1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;fontSize=12;" value="&lt;b&gt;БЕЗОПАСНОСТЬ&lt;/b&gt;&lt;br&gt;(Security)&lt;br&gt;&lt;br&gt;&lt;i&gt;Upstream&lt;/i&gt;" vertex="1">
+          <mxGeometry height="100" width="240" x="480" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-medicine" parent="cm1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;fontSize=12;" value="&lt;b&gt;МЕДИЦИНА&lt;/b&gt;&lt;br&gt;(Medicine)&lt;br&gt;&lt;br&gt;&lt;i&gt;Patient / Open Host Service&lt;/i&gt;" vertex="1">
+          <mxGeometry height="100" width="260" x="100" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-fintech" parent="cm1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" value="&lt;b&gt;ФИНТЕХ&lt;/b&gt;&lt;br&gt;(Fintech)&lt;br&gt;&lt;br&gt;&lt;i&gt;Conformist&lt;/i&gt;" vertex="1">
+          <mxGeometry height="100" width="260" x="470" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-ai" parent="cm1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" value="&lt;b&gt;ИИ-СЕРВИСЫ&lt;/b&gt;&lt;br&gt;(AI Services)&lt;br&gt;&lt;br&gt;&lt;i&gt;Conformist&lt;/i&gt;" vertex="1">
+          <mxGeometry height="100" width="260" x="840" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-crm" parent="cm1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontSize=12;" value="&lt;b&gt;CRM&lt;/b&gt;&lt;br&gt;(Клиенты и Партнёры)&lt;br&gt;&lt;br&gt;&lt;i&gt;Conformist&lt;/i&gt;" vertex="1">
+          <mxGeometry height="100" width="260" x="650" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-analytics" parent="cm1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontSize=12;" value="&lt;b&gt;АНАЛИТИКА&lt;/b&gt;&lt;br&gt;(Analytics)&lt;br&gt;&lt;br&gt;&lt;i&gt;Conformist&lt;/i&gt;" vertex="1">
+          <mxGeometry height="100" width="260" x="300" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-arr-sec-med" edge="1" parent="cm1" source="cm-security" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673a6;" target="cm-medicine">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-arr-sec-fintech" edge="1" parent="cm1" source="cm-security" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673a6;" target="cm-fintech">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-arr-sec-ai" edge="1" parent="cm1" source="cm-security" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673a6;" target="cm-ai">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-arr-sec-label" parent="cm1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=10;fontColor=#9673a6;fontStyle=1;" value="&lt;b&gt;Upstream&lt;/b&gt; — аудит всех доменов" vertex="1">
+          <mxGeometry height="20" width="240" x="490" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-arr-med-fintech" edge="1" parent="cm1" source="cm-medicine" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#6c8ebf;" target="cm-fintech">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-arr-med-ai" edge="1" parent="cm1" source="cm-medicine" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#6c8ebf;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" target="cm-ai">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="295" y="430.08" />
+              <mxPoint x="905" y="430.08" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cm-arr-med-crm" edge="1" parent="cm1" source="cm-medicine" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#999999;dashed=1;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="cm-crm">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="640" />
+              <mxPoint x="600" y="640" />
+              <mxPoint x="600" y="570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cm-arr-fintech-crm" edge="1" parent="cm1" source="cm-fintech" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#999999;dashed=1;curved=0;" target="cm-crm">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="460" />
+              <mxPoint x="780" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cm-arr-med-analytics" edge="1" parent="cm1" source="cm-medicine" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#999999;dashed=1;curved=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="cm-analytics">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-arr-fintech-analytics" edge="1" parent="cm1" source="cm-fintech" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#999999;dashed=1;curved=0;" target="cm-analytics">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-legend-box" parent="cm1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;" value="" vertex="1">
+          <mxGeometry height="100" width="1000" x="100" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-legend-title" parent="cm1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontStyle=1;" value="ТИПЫ ОТНОШЕНИЙ DDD (Strategic Patterns)" vertex="1">
+          <mxGeometry height="20" width="300" x="120" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-legend-symb1" edge="1" parent="cm1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#9673a6;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="705" as="sourcePoint" />
+            <mxPoint x="190" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cm-legend-text1" parent="cm1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;" value="&lt;b&gt;Upstream&lt;/b&gt; — источник диктует формат, подписчики подчиняются" vertex="1">
+          <mxGeometry height="20" width="400" x="200" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-legend-symb2" edge="1" parent="cm1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#6c8ebf;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="730" as="sourcePoint" />
+            <mxPoint x="190" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cm-legend-text2" parent="cm1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;" value="&lt;b&gt;Patient / Open Host&lt;/b&gt; — публикует стандартные события для всех" vertex="1">
+          <mxGeometry height="20" width="400" x="200" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="cm-legend-symb3" edge="1" parent="cm1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;strokeColor=#999999;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="705" as="sourcePoint" />
+            <mxPoint x="690" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cm-legend-text3" parent="cm1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=10;" value="&lt;b&gt;Conformist&lt;/b&gt; — принимает формат источника без изменений" vertex="1">
+          <mxGeometry height="20" width="380" x="700" y="695" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

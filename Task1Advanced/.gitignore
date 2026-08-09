@@ -1,0 +1,10 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform.lock.hcl
+.archive
+
+# Yandex Cloud
+*.key.json
